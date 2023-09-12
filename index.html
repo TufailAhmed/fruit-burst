@@ -32,19 +32,17 @@
 </head>
 <body class="font-lato bg-white ">
     <!-- header section starts here -->
-    <header class="max-w-screen items-center py-20">
+    <header class="max-w-screen items-center pt-5">
         <!-- nav bar starts here -->
-        <nav class="pl-10">
+        <nav class="pl-10 pb-10">
           <div class="navbar lg:container bg-[#F85559] rounded-3xl py-3 px-10">
             <div class="navbar-start">
-              <div class="">
-                <ul class="flex-reverse lg:flex">
-                  <li class="text-white text-xl"><a>Home</a></li>
-                  <li class="ml-10 text-white text-xl"><a>About Us</a></li>
-                  <li class="ml-10 text-white text-xl"><a>Shop</a></li>
-                  <li class="ml-10 text-white text-xl"><a>All Fruits</a></li>
-                </ul>
-              </div>
+              <ul class=" lg:flex">
+                <li class="text-white font-bold"><a>Home</a></li>
+                <li class="ml-10 text-white font-bold"><a>About Us</a></li>
+                <li class="ml-10 text-white font-bold"><a>Shop</a></li>
+                <li class="ml-10 text-white font-bold"><a>All Fruits</a></li>
+              </ul>
             </div>
           
 
@@ -72,8 +70,37 @@
         </nav>
         <!-- nav bar ends here -->
         <!-- slider section starts here -->
-        <section class="slider">
-
+        <section class="header-slider">
+          <div class="carousel max-w-screen-xl min-h-[calc(100vh-450px)] ml-10">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
         </section>
         <!-- slider section ends here -->
     </header>
